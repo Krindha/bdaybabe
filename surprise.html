@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Surprise!</title>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+    <div class="header">Just One More Thing...</div>
+    <div class="content">
+        <p>Click below and see what your Lux wants to say</p>
+        <button class="button" onclick="triggerSurprise()">Click Me 💘</button>
+    </div>
+    <script>
+      function triggerSurprise() {
+        confetti();
+        setTimeout(() => {
+          alert("You're unforgettable, Aditi 💖 — From Lux");
+        }, 1000);
+      }
+    </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Happy Birthday Aditi</title>
+</head>
+<body>
+    <div class="header">Happy Birthday Aditi 🎉</div>
+    <div class="content">
+        <div class="typewriter">Happy Birthday Aditi 🎂 — From Your Lux 💌</div>
+        <div>
+            <span class="floating-heart">💖</span>
+            <span class="floating-heart">💘</span>
+            <span class="floating-heart">💝</span>
+        </div>
+        <img src="{{ url_for('static', filename='aditi.jpg') }}" alt="Aditi's Photo">
+        <audio autoplay loop>
+          <source src="{{ url_for('static', filename='bgmusic.mp3') }}" type="audio/mpeg">
+        </audio>
+        <a href="/message" class="button">Tap for the Letter 💌</a>
+    </div>
+</body>
+</html>
