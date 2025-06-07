@@ -4,21 +4,7 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
     <title>Happy Birthday Aditi</title>
 </head>
-    <audio id="bg-music" autoplay loop>
-  <source src="{{ url_for('static', filename='static/aditi.mp3') }}" type="audio/mpeg">
-  Your browser does not support the audio element.
-</audio>
-
-<script>
-  // Ensure music starts on user interaction (required by modern browsers)
-  document.addEventListener("click", function () {
-    const audio = document.getElementById("bg-music");
-    if (audio.paused) {
-      audio.play().catch(err => console.log(err));
-    }
-  }, { once: true });
-</script>
-
+   
 <body>
     <div class="header">Happy Birthday Aditi 🎉</div>
     <div class="content">
@@ -34,5 +20,20 @@
         </audio>
         <a href="/message" class="button">Tap for the Letter 💌</a>
     </div>
+     <audio id="bg-music" autoplay loop>
+  <source src="{{ url_for('static', filename='static/aditi.mp3') }}" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+<script>
+  // Ensure music starts on user interaction (required by modern browsers)
+  document.addEventListener("click", function () {
+    const audio = document.getElementById("bg-music");
+    if (audio.paused) {
+      audio.play().catch(err => console.log(err));
+    }
+  }, { once: true });
+</script>
+
 </body>
 </html>
